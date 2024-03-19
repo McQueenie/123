@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Wygeneruj zbiór danych</h1>
+    <form action="/download_excel" method="post">
+        <div class="input-group mb-3">
+            <button type="submit" class="btn btn-primary">Generuj</button>
+            <div class="input-group-prepend">
+                <span class="input-group-text">Ilość wierszy</span>
+            </div>
+            <input type="number" name="rows" class="form-control" aria-label="Rows Number">
+        </div>
+    </form>
+{% endblock content %}
